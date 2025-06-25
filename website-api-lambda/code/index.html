@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Earthworm Lab</title>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+  <!-- Locked worm logo -->
+  <img id="wormLogo" src="images/worm-lock.png" alt="Earthworm Logo" />
+
+  <!-- Page title -->
+  <h1>Welcome to the Earthworm Lab</h1>
+
+  <!-- Architecture diagram (hidden by default) -->
+  <img id="archImage" src="images/architecture.png" alt="Architecture Diagram" />
+
+  <!-- Fake login form -->
+  <form onsubmit="unlockWorm(event)">
+    <input type="text"     placeholder="Username" required />
+    <input type="password" placeholder="Password" required />
+    <button type="submit">Sign In</button>
+  </form>
+
+  <!-- Secret unlock message -->
+  <p id="unlockMessage" style="display:none; color:#00ff00; margin-top:20px;">
+    The Earthworm Mentality has been activated...
+  </p>
+
+  <!-- Lambda response display -->
+  <p id="lambdaResponse" style="display:none; color:#00ff00; margin-top:20px;"></p>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
